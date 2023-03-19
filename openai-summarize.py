@@ -205,8 +205,8 @@ if __name__ == "__main__":
         add_help=True,
     )
 
-    argparser.add_argument('-i', '--input', help='input file(audio/text)', required=True)
-    argparser.add_argument('-t', '--type', help='input file type (text | audio)', choices=["audio", "text"], required=True)
+    argparser.add_argument('-i', '--input', help='input file [audio(mp4,m4a,mp3,wav)|text(utf-8)]', required=True)
+    argparser.add_argument('-t', '--type', help='input file type', choices=["audio", "text"], required=True)
     argparser.add_argument('-ot', '--transcript', help='output transcript text')
     argparser.add_argument('-os', '--summary', help='output summary text')
 
